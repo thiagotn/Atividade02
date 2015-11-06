@@ -1,5 +1,6 @@
 package cc.thiago.atividade02;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.PersistableBundle;
 import android.support.design.widget.FloatingActionButton;
@@ -7,6 +8,8 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 
@@ -52,6 +55,25 @@ public class MainActivity extends ActionBarActivity {
                         .setAction("Action", null).show();
             }
         });
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        int id = item.getItemId();
+
+        if (id == R.id.action_about) {
+            Intent toAboutActivity = new Intent(this, AboutActivity.class);
+            startActivity(toAboutActivity);
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 
     @Override

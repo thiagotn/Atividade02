@@ -5,4 +5,9 @@
     <string name="btnDiminuir">-</string>
     <string name="txtZero">0</string>
     <string name="btnZerar">Zerar</string>
+    <string name="action_about">Sobre</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="txtGrupo">RM: 49824</string>
+    <string name="txtName">Thiago Teixeira Nogueira</string>
+    <string name="txtEmail">thiagotn@gmail.com</string>
 </resources>
